@@ -9,14 +9,12 @@ metadata:
     - angular
 spec:
   owner: web@example.com
-  templater: cra
+  templater: ng
   type: website
   path: '.'
-  
   schema:
-    required: 
+    required:
       - component_id
-      - use_typescript
       - description
     properties:
       component_id:
@@ -28,13 +26,3 @@ spec:
         title: Description
         type: string
         description: Help others understand what this website is for.
-      use_typescript:
-        title:  Use TypeScript
-        type: boolean
-        description: Include TypeScript
-        default: true
-      use_github_actions:
-        title:  Use Github Actions workflows to build this component
-        type: boolean
-        description: Use Github Actions
-        default: true
